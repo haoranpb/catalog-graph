@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-catalog-graph",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a elegant graph catalog for your document",
   "repository": {
     "type": "git",
@@ -10,16 +10,20 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "vuepress",
     "plugin",
     "graph",
-    "network"
+    "network",
+    "catalog"
   ],
   "author": "ludanxer <ludanxer@icloud.com>",
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.1.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }
