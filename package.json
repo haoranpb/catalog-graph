@@ -7,7 +7,7 @@
     "url": "git+https://github.com/ludanxer/vuepress-plugin-catalog-graph"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs"
   },
   "main": "src/index.js",
@@ -24,6 +24,7 @@
     "vuepress": "^1.1.0"
   },
   "dependencies": {
+    "d3-force": "^2.0.1",
     "path": "^0.12.7"
   }
 }
