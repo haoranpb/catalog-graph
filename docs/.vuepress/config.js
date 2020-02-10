@@ -3,6 +3,9 @@ module.exports = {
   plugins: [
     require('../../src/index.js')
   ],
+  extraWatchFiles: [
+    './../../src/**'
+  ],
   themeConfig: {
     nav: [
       {text: 'Demo', link:'/demo/'},
