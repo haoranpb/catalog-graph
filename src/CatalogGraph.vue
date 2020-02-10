@@ -7,7 +7,6 @@
 
 <script>
 import * as d3 from 'd3'
-import func from '../vue-temp/vue-editor-bridge';
 
 export default {
   name: 'catalog-graph',
@@ -22,43 +21,43 @@ export default {
     const nodes = this.$demoData.nodes.map(d => Object.create(d));
 
     const simulation = this.initSimulation(nodes, links, this.width, this.height);
-    console.log(links)
-    // // init the svg scale
-    // const svg = d3.select("svg.catalog-graph-svg")
-    //   .attr("viewBox", [0, 0, this.width, this.height]);
 
-    // const link = svg.append("g")
-    //     .attr("stroke", "#999")
-    //     .attr("stroke-opacity", 0.6)
-    //   .selectAll("line")
-    //   .data(links)
-    //   .join("line")
-    //     .attr("stroke-width", d => Math.sqrt(d.value));
+    // init the svg scale
+    const svg = d3.select("svg.catalog-graph-svg")
+      .attr("viewBox", [0, 0, this.width, this.height]);
 
-    // const node = svg.append("g")
-    //     .attr("stroke", "#fff")
-    //     .attr("stroke-width", 1.5)
-    //   .selectAll("circle")
-    //   .data(nodes)
-    //   .join("circle")
-    //     .attr("r", 5)
-    //     .attr("fill", this.color)
-    //     .call(this.drag(simulation));
+    const linkElements = svg.append("g")
+        .attr("stroke", "#999")
+        .attr("stroke-opacity", 0.6)
+      .selectAll("line")
+      .data(links)
+      .join("line")
+        .attr("stroke-width", d => Math.sqrt(d.value));
 
-    // node.append("title")
-    //     .text(d => d.id);
+    const nodeElements = svg.append("g")
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 1.5)
+      .selectAll("circle")
+      .data(nodes)
+      .join("circle")
+        .attr("r", 5)
+        .attr("fill", this.color)
+        .call(this.drag(simulation));
 
-    // simulation.on("tick", () => {
-    //   link
-    //     .attr("x1", d => d.source.x)
-    //     .attr("y1", d => d.source.y)
-    //     .attr("x2", d => d.target.x)
-    //     .attr("y2", d => d.target.y);
+    nodeElements.append("title")
+        .text(d => d.id);
 
-    //   node
-    //     .attr("cx", d => d.x)
-    //     .attr("cy", d => d.y);
-    // });
+    simulation.on("tick", () => {
+      linkElements
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      nodeElements
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
+    });
   },
   methods: {
     // don't quite understand, but it adds the simulation to drag and drop events
@@ -86,6 +85,7 @@ export default {
           .on("end", dragended);
     },
     // set the color for each node based on group
+    // TODO: set diffent color for different level nodes
     color: function(node) {
       const scale = d3.scaleOrdinal(d3.schemeCategory10);
       return scale(node.group);
