@@ -1,8 +1,8 @@
 # Vuepress-plugin-catalog-graph
 
-Generate a elegant graph catalog for your document.
+Generate a elegant graph catalog for your VuePress documents.
 
-Status: WIP. I start many projects, hopefully I will finish this one.
+> Status: WIP. I start many projects, hopefully I will finish this one.
 
 ## Inspiration
 
@@ -10,6 +10,6 @@ Normal catalog is boring. I want to generate a network graph catalog based on yo
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](./LICENSE)
 
-Copyright (c) 2019 ludanxer
+Copyright (c) 2019-present ludanxer
