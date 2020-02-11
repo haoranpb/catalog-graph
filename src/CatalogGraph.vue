@@ -6,7 +6,7 @@
 
 <script>
 import * as d3 from 'd3'
-import GraphTree from './GraphTree'
+import GraphTree from './graph/GraphTree'
 
 export default {
   name: 'catalog-graph',
@@ -62,7 +62,7 @@ export default {
       .selectAll("circle")
       .data(this.nodes)
       .join("circle")
-        .attr("r", 5)
+        .attr("r", 8)
         .attr("fill", this.color)
         .call(this.drag(simulation));
 
