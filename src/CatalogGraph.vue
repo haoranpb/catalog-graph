@@ -1,6 +1,5 @@
 <template>
   <div class="catalog-graph">
-    <h1>This is catalog-graph</h1>
     <svg class="catalog-graph-svg"></svg>
   </div>
 </template>
@@ -13,14 +12,30 @@ export default {
   name: 'catalog-graph',
   data() {
     return {
-      width: 600,
-      height: 600,
       nodes: [],
       links: []
     }
   },
+  props: {
+    width: {
+      type: Number,
+      default: 900
+    },
+    height: {
+      type: Number,
+      default: 600
+    },
+    root: {
+      type: String,
+      default: '/'
+    },
+    title: {
+      type: String,
+      default: 'Graph Catalog'
+    }
+  },
   created() {
-    const graphTree = new GraphTree(this.$site.pages, '/');
+    const graphTree = new GraphTree(this.$site.pages, this.root, this.title);
     const { nodes, links } = graphTree.flatten();
     this.nodes = nodes;
     this.links = links;
@@ -30,6 +45,7 @@ export default {
 
     // init the svg scale
     const svg = d3.select("svg.catalog-graph-svg")
+      .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("viewBox", [0, 0, this.width, this.height]);
 
     const linkElements = svg.append("g")
@@ -51,7 +67,7 @@ export default {
         .call(this.drag(simulation));
 
     nodeElements.append("title")
-        .text(d => d.id);
+        .text(d => d.title);
 
     simulation.on("tick", () => {
       linkElements
