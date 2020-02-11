@@ -7,6 +7,7 @@
 
 <script>
 import * as d3 from 'd3'
+import GraphTree from './GraphTree'
 
 export default {
   name: 'catalog-graph',
@@ -15,6 +16,9 @@ export default {
       width: 600,
       height: 600
     }
+  },
+  created() {
+    let graphTree = new GraphTree(this.$site.pages, '/demo/');
   },
   mounted() {
     const links = this.$demoData.links.map(d => Object.create(d));
@@ -87,8 +91,8 @@ export default {
     // set the color for each node based on group
     // TODO: set diffent color for different level nodes
     color: function(node) {
-      const scale = d3.scaleOrdinal(d3.schemeCategory10);
-      return scale(node.group);
+      // const scale = d3.scaleOrdinal(d3.schemeCategory10);
+      return '#3eaf7c';
     },
     // init the simulation for the graph
     initSimulation: function(nodes, links, width, height) {
@@ -102,6 +106,11 @@ export default {
         .force('center', d3.forceCenter(width / 2, height / 2));
 
       return simulation;
+    }
+  },
+  computed: {
+    dataConstruct: function() {
+
     }
   }
 }
