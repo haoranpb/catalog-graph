@@ -14,17 +14,19 @@ export default {
   data() {
     return {
       width: 600,
-      height: 600
+      height: 600,
+      nodes: [],
+      links: []
     }
   },
   created() {
-    let graphTree = new GraphTree(this.$site.pages, '/demo/');
+    const graphTree = new GraphTree(this.$site.pages, '/');
+    const { nodes, links } = graphTree.flatten();
+    this.nodes = nodes;
+    this.links = links;
   },
   mounted() {
-    const links = this.$demoData.links.map(d => Object.create(d));
-    const nodes = this.$demoData.nodes.map(d => Object.create(d));
-
-    const simulation = this.initSimulation(nodes, links, this.width, this.height);
+    const simulation = this.initSimulation(this.nodes, this.links, this.width, this.height);
 
     // init the svg scale
     const svg = d3.select("svg.catalog-graph-svg")
@@ -34,7 +36,7 @@ export default {
         .attr("stroke", "#999")
         .attr("stroke-opacity", 0.6)
       .selectAll("line")
-      .data(links)
+      .data(this.links)
       .join("line")
         .attr("stroke-width", d => Math.sqrt(d.value));
 
@@ -42,7 +44,7 @@ export default {
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
       .selectAll("circle")
-      .data(nodes)
+      .data(this.nodes)
       .join("circle")
         .attr("r", 5)
         .attr("fill", this.color)
@@ -88,29 +90,22 @@ export default {
           .on("drag", dragged)
           .on("end", dragended);
     },
-    // set the color for each node based on group
-    // TODO: set diffent color for different level nodes
+    // set color based on node type
     color: function(node) {
-      // const scale = d3.scaleOrdinal(d3.schemeCategory10);
-      return '#3eaf7c';
+      return node.isLeaf() ? '#3EAF7C': '#C28229';
     },
     // init the simulation for the graph
     initSimulation: function(nodes, links, width, height) {
       const simulation = d3.forceSimulation(nodes)
         // a force for each relationship
         // ?no strength specificed, values automaticly do the trick?
-        .force('link', d3.forceLink(links).id(d => d.id))
+        .force('link', d3.forceLink(links).id(node => node.id))
         // a global electrostatic effect to keep the nodes away from each other
         .force('charge', d3.forceManyBody())
         // a gblobal force to move all nodes to the center of the svg
         .force('center', d3.forceCenter(width / 2, height / 2));
 
       return simulation;
-    }
-  },
-  computed: {
-    dataConstruct: function() {
-
     }
   }
 }

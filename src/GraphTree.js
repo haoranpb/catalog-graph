@@ -23,14 +23,13 @@ export default class GraphTree {
       if(page.regularPath.startsWith(this.rootNode.regularPath))
         this.rootNode.addChild(new GraphNode(page));
     }
-    console.log(this);
   }
 
   /**
    * Flattern the GraphTree into an array of nodes and an array of links
    */
   flatten() {
-
+    return DFS(this.rootNode);
   }
 }
 
@@ -98,5 +97,26 @@ class GraphNode {
   isLeaf() {
     // All pages in VuePress have a unique id: v-xxxx
     return this.id.startsWith('v-');
+  }
+}
+
+function DFS(node) {
+  let nodeArray = [node];
+  let linkArray = [];
+  for(let child of node.children) {
+    const { nodes, links } = DFS(child);
+
+    nodeArray = nodeArray.concat(nodes);
+
+    linkArray.push({
+      target: node.id,
+      source: child.id,
+      value: 5
+    });
+    linkArray = linkArray.concat(links);
+  }
+  return {
+    nodes: nodeArray,
+    links: linkArray
   }
 }
