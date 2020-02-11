@@ -8,7 +8,8 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      {text: 'Demo', link:'/demo/'},
+      {text: 'Guide', link:'/guide/'},
+      {text: 'Game of Thones', link:'/GoT/'},
       {text: 'GitHub', link: 'https://github.com/ludanxer/vuepress-plugin-catalog-graph'}
     ]
   }

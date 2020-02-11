@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-catalog-graph",
   "version": "0.0.2",
-  "description": "Generate a elegant graph catalog for your document",
+  "description": "Generate a elegant graph catalog for your documents",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ludanxer/vuepress-plugin-catalog-graph"
