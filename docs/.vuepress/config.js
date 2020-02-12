@@ -1,6 +1,9 @@
 module.exports = {
   title: 'Catalog Graph',
   plugins: [
+    ['@vuepress/google-analytics', {
+        'ga': 'UA-146772217-3'
+    }],
     require('../../src/index.js')
   ],
   extraWatchFiles: [
