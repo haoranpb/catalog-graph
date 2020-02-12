@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'vuepress-plugin-catalog-graph',
+  title: 'Catalog Graph',
   plugins: [
     require('../../src/index.js')
   ],
@@ -8,9 +8,9 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      {text: 'Guide', link:'/guide/'},
-      {text: 'Game of Thones', link:'/GoT/'},
-      {text: 'GitHub', link: 'https://github.com/ludanxer/vuepress-plugin-catalog-graph'}
+      { text: 'Guide', link:'/guide/getting-started.html' },
+      { text: 'Game of Thones', link:'/GoT/' },
+      { text: 'GitHub', link: 'https://github.com/ludanxer/catalog-graph' }
     ]
   }
 }

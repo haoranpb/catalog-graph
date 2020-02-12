@@ -62,7 +62,7 @@ export default {
       .selectAll("circle")
       .data(this.nodes)
       .join("circle")
-        .attr("r", 8)
+        .attr("r", 5)
         .attr("fill", this.color)
         .call(this.drag(simulation));
 
