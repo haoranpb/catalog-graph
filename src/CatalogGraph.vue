@@ -14,7 +14,12 @@ export default {
   data() {
     return {
       nodes: [],
-      links: []
+      links: [],
+      options: {
+        node: {
+          color: color
+        }
+      }
     }
   },
   props: {
@@ -36,6 +41,7 @@ export default {
     }
   },
   created() {
+    Object.assign(this.options, this.$catalogGraph);
     const graphTree = new GraphTree(this.$site.pages, this.root, this.title);
     const { nodes, links } = graphTree.flatten();
     this.nodes = nodes;
@@ -64,7 +70,7 @@ export default {
       .data(this.nodes)
       .join("circle")
         .attr("r", 5)
-        .attr("fill", color)
+        .attr("fill", this.options.node.color)
         .call(this.drag(simulation));
 
     nodeElements.append("title")
