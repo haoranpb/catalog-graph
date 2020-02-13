@@ -2,7 +2,7 @@ module.exports = {
   title: 'Catalog Graph',
   plugins: [
     ['@vuepress/google-analytics', {
-        'ga': 'UA-146772217-3'
+      'ga': 'UA-146772217-3'
     }],
     require('../../lib/index.js')
   ],

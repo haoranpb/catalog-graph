@@ -1,6 +1,6 @@
 <template>
-  <div class="catalog-graph">
-    <svg class="catalog-graph-svg"></svg>
+  <div class='catalog-graph'>
+    <svg class='catalog-graph-svg'></svg>
   </div>
 </template>
 
@@ -47,45 +47,45 @@ export default {
     const simulation = this.initSimulation(nodes, links, this.width, this.height);
 
     // init the svg scale
-    const svg = d3.select("svg.catalog-graph-svg")
-      .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", [0, 0, this.width, this.height]);
+    const svg = d3.select('svg.catalog-graph-svg')
+      .attr('preserveAspectRatio', 'xMinYMin meet')
+      .attr('viewBox', [0, 0, this.width, this.height]);
 
-    const linkElements = svg.append("g")
-        .attr("stroke", "#999")
-        .attr("stroke-opacity", 0.6)
-      .selectAll("line")
+    const linkElements = svg.append('g')
+        .attr('stroke', '#999')
+        .attr('stroke-opacity', 0.6)
+      .selectAll('line')
       .data(links)
-      .join("line")
-        .attr("stroke-width", d => Math.sqrt(d.value));
+      .join('line')
+        .attr('stroke-width', d => Math.sqrt(d.value));
 
-    const nodeElements = svg.append("g")
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 1.5)
-      .selectAll("circle")
+    const nodeElements = svg.append('g')
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 1.5)
+      .selectAll('circle')
       .data(nodes)
-      .join("circle")
-        .attr("r", 5)
-        .attr("fill", this.options.node.color)
+      .join('circle')
+        .attr('r', 5)
+        .attr('fill', this.options.node.color)
         .call(this.drag(simulation));
 
-    nodeElements.append("title")
+    nodeElements.append('title')
         .text(d => d.title);
 
     nodeElements.on('dblclick', (d) => {
       this.$router.push(d.regularPath);
     });
 
-    simulation.on("tick", () => {
+    simulation.on('tick', () => {
       linkElements
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
+        .attr('x1', d => d.source.x)
+        .attr('y1', d => d.source.y)
+        .attr('x2', d => d.target.x)
+        .attr('y2', d => d.target.y);
 
       nodeElements
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y);
+        .attr('cx', d => d.x)
+        .attr('cy', d => d.y);
     });
   },
   methods: {
@@ -109,9 +109,9 @@ export default {
       }
 
       return d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended);
+        .on('start', dragstarted)
+        .on('drag', dragged)
+        .on('end', dragended);
     },
     // init the simulation for the graph
     initSimulation: function(nodes, links, width, height) {
