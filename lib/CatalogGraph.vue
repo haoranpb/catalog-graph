@@ -13,8 +13,6 @@ export default {
   name: 'catalog-graph',
   data() {
     return {
-      nodes: [],
-      links: [],
       options: {
         node: {
           color: color
@@ -42,13 +40,11 @@ export default {
   },
   created() {
     Object.assign(this.options, this.$catalogGraph);
-    const graphTree = new GraphTree(this.$site.pages, this.root, this.title);
-    const { nodes, links } = graphTree.flatten();
-    this.nodes = nodes;
-    this.links = links;
   },
   mounted() {
-    const simulation = this.initSimulation(this.nodes, this.links, this.width, this.height);
+    const graphTree = new GraphTree(this.$site.pages, this.root, this.title);
+    const { nodes, links } = graphTree.flatten();
+    const simulation = this.initSimulation(nodes, links, this.width, this.height);
 
     // init the svg scale
     const svg = d3.select("svg.catalog-graph-svg")
@@ -59,7 +55,7 @@ export default {
         .attr("stroke", "#999")
         .attr("stroke-opacity", 0.6)
       .selectAll("line")
-      .data(this.links)
+      .data(links)
       .join("line")
         .attr("stroke-width", d => Math.sqrt(d.value));
 
@@ -67,7 +63,7 @@ export default {
         .attr("stroke", "#fff")
         .attr("stroke-width", 1.5)
       .selectAll("circle")
-      .data(this.nodes)
+      .data(nodes)
       .join("circle")
         .attr("r", 5)
         .attr("fill", this.options.node.color)
@@ -75,6 +71,10 @@ export default {
 
     nodeElements.append("title")
         .text(d => d.title);
+
+    nodeElements.on('dblclick', (d) => {
+      this.$router.push(d.regularPath);
+    });
 
     simulation.on("tick", () => {
       linkElements
@@ -120,7 +120,7 @@ export default {
         // ?no strength specificed, values automaticly do the trick?
         .force('link', d3.forceLink(links).id(node => node.id))
         // a global electrostatic effect to keep the nodes away from each other
-        .force('charge', d3.forceManyBody())
+        .force('charge', d3.forceManyBody().strength(-20))
         // a gblobal force to move all nodes to the center of the svg
         .force('center', d3.forceCenter(width / 2, height / 2));
 
