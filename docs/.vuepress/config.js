@@ -4,10 +4,10 @@ module.exports = {
     ['@vuepress/google-analytics', {
         'ga': 'UA-146772217-3'
     }],
-    require('../../src/index.js')
+    require('../../lib/index.js')
   ],
   extraWatchFiles: [
-    './../../src/**'
+    '../../lib/**'
   ],
   themeConfig: {
     nav: [
