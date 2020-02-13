@@ -18,7 +18,7 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@commitlint/config-angular"
     ]
   },
   "main": "src/index.js",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-angular": "^8.3.4",
     "@vuepress/plugin-google-analytics": "^1.3.0",
     "husky": "^4.2.2",
     "standard-version": "^7.1.0",
