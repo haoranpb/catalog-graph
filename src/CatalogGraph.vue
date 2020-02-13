@@ -7,6 +7,7 @@
 <script>
 import * as d3 from 'd3'
 import GraphTree from './graph/GraphTree'
+import { color } from './graph/defaultFunc'
 
 export default {
   name: 'catalog-graph',
@@ -63,7 +64,7 @@ export default {
       .data(this.nodes)
       .join("circle")
         .attr("r", 5)
-        .attr("fill", this.color)
+        .attr("fill", color)
         .call(this.drag(simulation));
 
     nodeElements.append("title")
@@ -105,10 +106,6 @@ export default {
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended);
-    },
-    // set color based on node type
-    color: function(node) {
-      return node.isLeaf() ? '#3EAF7C': '#C28229';
     },
     // init the simulation for the graph
     initSimulation: function(nodes, links, width, height) {
