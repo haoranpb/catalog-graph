@@ -22,6 +22,9 @@
     ]
   },
   "main": "src/index.js",
+  "files": [
+    "/lib"
+  ],
   "keywords": [
     "vuepress-plugin",
     "catalog",
