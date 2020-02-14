@@ -1,10 +1,9 @@
 # vuepress-plugin-catalog-graph
 
 <p align="left">
-  <a href="https://app.netlify.com/sites/catalog-graph/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/310f5f89-c4b3-467e-b173-99f8d6ce85b2/deploy-status" />
-  </a>
-  <img src="https://img.shields.io/npm/v/vuepress-plugin-catalog-graph" />
+  <img src="https://badgen.net/npm/v/vuepress-plugin-catalog-graph" />
+  <img src="https://badgen.net/npm/license/vuepress-plugin-catalog-graph" />
+  <img src="https://badgen.net/packagephobia/install/vuepress-plugin-catalog-graph" />
 </p>
 
 A network graph for your VuePress' documentation.
