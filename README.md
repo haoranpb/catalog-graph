@@ -1,12 +1,13 @@
 # vuepress-plugin-catalog-graph
 
+A network graph for your VuePress' documentation.
+
 <p align="left">
   <img src="https://badgen.net/npm/v/vuepress-plugin-catalog-graph" />
   <img src="https://badgen.net/npm/license/vuepress-plugin-catalog-graph" />
   <img src="https://badgen.net/packagephobia/install/vuepress-plugin-catalog-graph" />
+  <img src="https://badgen.net/github/last-commit/ludanxer/vuepress-plugin-catalog-graph" />
 </p>
-
-A network graph for your VuePress' documentation.
 
 ## Usage
 

@@ -2,9 +2,9 @@
 home: true
 heroImage: /hero.png
 heroText: Catalog Graph
-tagline: A network graph for your VuePress' documentation
+tagline: Network graph for your documentation
 actionText: Get Started →
-actionLink: /guide/getting-started.html
+actionLink: /guide/
 features:
 - title: Network Graph
   details: Catalog graph gives you more freedom if your document site structure is not strictly tree-like.
