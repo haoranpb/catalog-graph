@@ -1,10 +1,16 @@
 # Getting Started
 
-In addition to this document, you may also want to check out [How to Use Plugin](https://vuepress.vuejs.org/plugin/using-a-plugin.html#using-a-plugin) in VuePress.
+In addition to this document, you may also want to check out [How to Use Plugin](https://vuepress.vuejs.org/plugin/using-a-plugin.html#using-a-plugin) in VuePress. 
 
-There is a live demo in this document site: [Game of Thones](../GoT).
+**live demo** :point_right: [Game of Thones](../GoT)
 
-## Install
+Three steps to get things done!
+
+[[toc]]
+
+## Installation
+
+Install `vuepress-plugin-catalog-graph` to your local dependency.
 
 ::: warning Note
 **Globally installed** VuePress won't be able to find **locally installed** plugins.
@@ -14,18 +20,24 @@ There is a live demo in this document site: [Game of Thones](../GoT).
 yarn install -D vuepress-plugin-catalog-graph
 ```
 
-## Enalbe in VuePress
+## Config VuePress
+
+Config VuePress to enable Catalog Graph.
 
 ```js
 module.exports = {
-  plugins: [ 'vuepress-plugin-catalog-graph' ]
+  plugins: ['vuepress-plugin-catalog-graph']
 }
 ```
 
-## Add to Your Document
+## Done :tada:
+
+Put Catalog Graph in your document, and go check it out!
 
 ```markdown
 # Catalog Graph
 
 <CatalogGraph />
 ```
+
+Need more custimization, visit 

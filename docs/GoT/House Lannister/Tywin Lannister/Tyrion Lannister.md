@@ -1,3 +1,16 @@
 # Tyrion Lannister
 
 Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. He is the current Lord of Casterly Rock and Hand of the King Brandon Stark.
+
+## Background
+
+Tyrion Lannister is the youngest son of Joanna Lannister and Lord Tywin Lannister. Tywin was the head of House Lannister, the richest man in the Seven Kingdoms and Lord Paramount of the Westerlands. The Westerlands are one of the constituent regions of the Seven Kingdoms and House Lannister of Casterly Rock is one of the Great Houses of the realm. He is the younger brother of Jaime and Cersei Lannister. His mother Joanna Lannister died giving birth to him. His father and sister blame Tyrion for the death.
+He is a dwarf, causing him problems and persecution. His size has led him to being referred to derisively by various names, such as "The Imp" and "The Halfman". This is mitigated by his intellect and his family's wealth and power. Had an infant with dwarfism like Tyrion been born a commoner, he'd have simply been left out in the woods to die. However, Tyrion was born into a powerful noble House, and was therefore spared. Even though his father doesn't think much of him, he has had the benefits of being raised with wealth and education, and is expected to lead his life as a credit to the Lannister name. He is committed to the good of both his House, and since Cersei married King Robert Baratheon, his family's continued hold on the throne.
+
+When Tyrion was 16, he met a wheelwright's daughter named Tysha on the road, apparently the victim of an attempted rape. While his brother Jaime ran off the attackers, Tyrion helped Tysha recover from the ordeal, and they became lovers. They found a drunken, wandering septon willing to marry them and briefly, they lived as husband and wife. However, Lord Tywin learned what had happened and became displeased. Jaime confessed that he organized the incident to make his brother happy, and Tysha was actually a prostitute. As a lesson, Tywin gave Tysha to his guards, paying her a silver coin for each man and forcing Tyrion to watch. By the end, there were so many silver coins that they were running out of her hands onto the ground. Tyrion has reciprocated Tywin's hatred ever since.
+
+His two siblings had positions of respect and responsibility since their teens. When Tyrion turned sixteen (the age of manhood), Tywin Lannister put Tyrion in charge of the drains and cisterns at Casterly Rock. Tyrion brags that the "sewage never flowed smoother to the sea."
+
+Tyrion once encountered Lord Gregor Forrester at the tourney in Lannisport. While they once spoke briefly, Tyrion found Gregor very honorable, even mentioning it to Gregor's daughter Mira years later.
+
+Tyrion spent a lot of time at court in King's Landing to avoid his father. He got on well with Jaime and his niece Myrcella and nephew Tommen, but had a colder relationship with Cersei and his sadistic nephew Joffrey. He has a fondness for prostitutes and drink, but is also intelligent, cunning, and educated. He is also a kind man who would protect the innocent, claiming that he loves broken things.

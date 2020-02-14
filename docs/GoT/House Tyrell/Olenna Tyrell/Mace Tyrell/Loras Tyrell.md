@@ -1,0 +1,11 @@
+# Loras Tyrell
+
+Ser Loras Tyrell was a popular tourney knight and was regarded as one of the most skilled knights in Westeros. He was the heir to Highgarden, as well as being the younger brother of Margaery Tyrell, who would later become Queen of the Seven Kingdoms. He also had a long-term romantic relationship with Renly Baratheon and was devastated when Renly was murdered; following this, Loras fought at Blackwater to avenge his death, and helped to win the battle to save King's Landing. Afterwards, he stayed in the city to support his sister in the new alliance between the Tyrells and House Lannister. However, following the Faith Militant's subsequent takeover in the capital, he was arrested and sent to prison. Informed that his only hope of getting out was to confess and give up his inheritance, he forcibly abdicated his titles and became known as Brother Loras. However, he died only a few minutes later, along with his father and sister when the Great Sept of Baelor was destroyed in a plot orchestrated by Cersei Lannister.
+
+## Background
+
+Ser Loras Tyrell is the son of Lady Alerie Hightower and Lord Mace Tyrell, the Lord Paramount of the Reach and Warden of the South. The Reach is one of the constituent regions of the Seven Kingdoms and House Tyrell is one of the Great Houses of the realm. Loras was raised in privilege in the family seat and regional capital of Highgarden. Loras is the heir to Highgarden and the Tyrell lands and titles, and this status, along with his skills and good looks, makes him possibly the most sought-after bachelor in all of Westeros.
+
+Loras is a skilled knight famed for his many tournament victories and his good looks, which make him popular with the smallfolk and with young women in particular. Loras is one of the few knights who has on rare occasion managed to defeat the formidable Jaime Lannister in a joust. He is commonly known as the "Knight of the Flowers", as a rose is the sigil of House Tyrell and he thus wears armor elaborately engraved with flowers.
+
+Loras is the former squire of Lord Renly Baratheon and remains Renly's lover. When the series begins Loras is in King's Landing primarily to compete in tourneys and attend court.

@@ -14,6 +14,7 @@ module.exports = {
     nav: [
       { text: 'Guide', link:'/guide/' },
       { text: 'Game of Thones', link:'/GoT/' },
+      { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
       { text: 'GitHub', link: 'https://github.com/ludanxer/catalog-graph' }
     ],
     sidebar: {
@@ -23,7 +24,8 @@ module.exports = {
           collapsable: false,
           children: [
             ['', 'Introduction'],
-            'getting-started'
+            'getting-started',
+            'configuration'
           ]
         }
       ]
