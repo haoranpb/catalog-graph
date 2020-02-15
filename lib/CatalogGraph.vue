@@ -7,17 +7,13 @@
 <script>
 import * as d3 from 'd3'
 import GraphTree from './graph/GraphTree'
-import { color } from './graph/defaultFunc'
+import fallback from './graph/fallback'
 
 export default {
   name: 'catalog-graph',
   data() {
     return {
-      options: {
-        node: {
-          color: color
-        }
-      }
+      options: fallback
     }
   },
   props: {
@@ -51,30 +47,10 @@ export default {
       .attr('preserveAspectRatio', 'xMinYMin meet')
       .attr('viewBox', [0, 0, this.width, this.height]);
 
-    const linkElements = svg.append('g')
-        .attr('stroke', '#999')
-        .attr('stroke-opacity', 0.6)
-      .selectAll('line')
-      .data(links)
-      .join('line')
-        .attr('stroke-width', d => Math.sqrt(d.value));
+    const linkElements = this.initLines(svg, this.options.line, links);
+    const nodeElements = this.initNodes(svg, this.options.node, nodes);
 
-    const nodeElements = svg.append('g')
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 1.5)
-      .selectAll('circle')
-      .data(nodes)
-      .join('circle')
-        .attr('r', 5)
-        .attr('fill', this.options.node.color)
-        .call(this.drag(simulation));
-
-    nodeElements.append('title')
-        .text(d => d.title);
-
-    nodeElements.on('dblclick', (d) => {
-      this.$router.push(d.regularPath);
-    });
+    this.nodeEnhance(nodeElements, this.options.node, simulation);
 
     simulation.on('tick', () => {
       linkElements
@@ -113,11 +89,9 @@ export default {
         .on('drag', dragged)
         .on('end', dragended);
     },
-    // init the simulation for the graph
     initSimulation: function(nodes, links, width, height) {
       const simulation = d3.forceSimulation(nodes)
         // a force for each relationship
-        // ?no strength specificed, values automaticly do the trick?
         .force('link', d3.forceLink(links).id(node => node.id))
         // a global electrostatic effect to keep the nodes away from each other
         .force('charge', d3.forceManyBody().strength(-20))
@@ -125,6 +99,33 @@ export default {
         .force('center', d3.forceCenter(width / 2, height / 2));
 
       return simulation;
+    },
+    initNodes: function(svg, options, nodes) {
+      return svg.append('g')
+          .attr('stroke', options.borderColor)
+          .attr('stroke-width', options.borderWidth)
+        .selectAll('circle')
+        .data(nodes)
+        .join('circle')
+          .attr('r', options.radius)
+          .attr('fill', options.color);
+    },
+    initLines: function(svg, options, links) {
+      return svg.append('g')
+          .attr('stroke', options.color)
+          .attr('stroke-opacity', options.opacity)
+        .selectAll('line')
+        .data(links)
+        .join('line')
+          .attr('stroke-width', options.width);
+    },
+    nodeEnhance: function(nodeElements, options, simulation) {
+
+      nodeElements.append('title').text(options.title);
+
+      nodeElements.on('dblclick', d => options.dblclick(d, this.$router));
+
+      nodeElements.call(this.drag(simulation));
     }
   }
 }
