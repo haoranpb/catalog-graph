@@ -6,9 +6,9 @@
 
 <script>
 import * as d3 from 'd3'
+import merge from 'lodash/merge'
 import GraphTree from './graph/GraphTree'
 import fallback from './graph/fallback'
-import * as _ from 'lodash'
 
 export default {
   name: 'catalog-graph',
@@ -36,7 +36,7 @@ export default {
     }
   },
   created() {
-    _.merge(this.options, this.$catalogGraph);
+    merge(this.options, this.$catalogGraph);
   },
   mounted() {
     const graphTree = new GraphTree(this.$site.pages, this.root, this.title);
