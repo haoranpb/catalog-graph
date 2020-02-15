@@ -4,7 +4,7 @@ Benjen Stark was a First Ranger of the Night's Watch. He embarks on a ranging no
 
 ## Background
 
-Benjen Stark is the youngest child and third son of Lord Rickard Stark. Rickard was the head of House Stark and Lord Paramount of the North. The North is one of the constituent regions of the Seven Kingdoms and House Stark is one of the Great Houses of the realm. House Stark rule the region from their seat of Winterfell and Rickard also held the title Lord of Winterfell.[1] He attended the The Great Tourney at Harrenhal.
+Benjen Stark is the youngest child and third son of Lord Rickard Stark. Rickard was the head of House Stark and Lord Paramount of the North. The North is one of the constituent regions of the Seven Kingdoms and House Stark is one of the Great Houses of the realm. House Stark rule the region from their seat of Winterfell and Rickard also held the title Lord of Winterfell. He attended the The Great Tourney at Harrenhal.
 
 Benjen is the younger brother of Brandon, Eddard and Lyanna. Rickard, Brandon and Lyanna were all killed in the civil war known as Robert's Rebellion. Eddard inherited his father's titles and responsibilities.
 
