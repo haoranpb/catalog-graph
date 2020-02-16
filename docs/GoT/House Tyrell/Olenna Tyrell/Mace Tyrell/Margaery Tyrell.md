@@ -1,3 +1,9 @@
+---
+catalogGraph:
+  - target: ../../../House Lannister/Tywin Lannister/Cersei Lannister/Joffrey Baratheon.html
+  - target: ../../../House Lannister/Tywin Lannister/Cersei Lannister/Tommen Baratheon.html
+---
+
 # Margaery Tyrell
 
 Queen Margaery Tyrell was the only daughter of Lord Mace Tyrell and Lady Alerie Tyrell, granddaughter of Lady Olenna Tyrell and sister of Ser Loras Tyrell. Margaery became Queen Consort through her marriage to King Joffrey Baratheon, and later his younger brother, King Tommen Baratheon, following Joffrey's death. However, a charge of perjury and a false dedication to the Sparrow movement led to her downfall as she was eventually killed along with her brother and father when the Great Sept of Baelor was destroyed with wildfire as orchestrated by Cersei Lannister to reclaim her lost power.

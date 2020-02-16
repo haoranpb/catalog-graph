@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - target: ../../House Baratheon/Robert Baratheon/
+---
+
 # Cersei Lannister
 
 Queen Cersei I Lannister was the twentieth ruler of the Seven Kingdoms and the widow of King Robert Baratheon. She was the daughter of Lord Tywin Lannister, twin sister of Jaime Lannister and elder sister of Tyrion Lannister. She was involved in an incestuous relationship with Jaime, who was secretly the father of her three bastard children, Joffrey, Myrcella and Tommen.
