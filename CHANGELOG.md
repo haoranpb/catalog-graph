@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/ludanxer/catalog-graph/compare/v0.2.2...v0.2.3) (2020-02-17)
+
+
+### Features
+
+* combine README file with folder ([6258029](https://github.com/ludanxer/catalog-graph/commit/62580291cd351b0aa41055b8c711f474684985c1))
+
+
+### Bug Fixes
+
+* allow multi-line functions ([ed21a93](https://github.com/ludanxer/catalog-graph/commit/ed21a930dbdde4956701bc578428144f3b91b318))
+* switch fallback export to ES6 ([5abc527](https://github.com/ludanxer/catalog-graph/commit/5abc527cc85ec9479820e76c1a711ec5e52ce3d2))
+
 ### [0.2.2](https://github.com/ludanxer/catalog-graph/compare/v0.2.1...v0.2.2) (2020-02-16)
 
 
