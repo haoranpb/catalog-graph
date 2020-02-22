@@ -9,17 +9,17 @@ module.exports = {
         color: d => {
           switch(true) {
             case d.regularPath.includes('/House Stark/'):
-              return 'rgb(109, 110, 113)';
+              return '#98999C';
             case d.regularPath.includes('/House Targaryen/'):
-              return 'rgb(224, 102, 104)';
+              return '#E06668';
             case d.regularPath.includes('/House Baratheon/'):
-              return 'rgb(153, 135, 123)';
+              return '#A39388';
             case d.regularPath.includes('/House Tyrell/'):
-              return 'rgb(235, 152, 63)';
+              return '#EB983F';
             case d.regularPath.includes('/House Lannister/'):
-              return 'rgb(233, 201, 102)';
+              return '#E9C966';
             case d.regularPath.includes('/House Tully/'):
-              return 'rgb(87, 181, 194)';
+              return '#57B5C2';
             default: return '#C28229';
           }
         }
