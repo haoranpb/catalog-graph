@@ -14,6 +14,10 @@ A network graph for your [VuePress](https://vuepress.vuejs.org/)' documentation.
 
 Check out the [documentation site](https://catalog-graph.netlify.com) and [How to Use Plugin](https://vuepress.vuejs.org/plugin/using-a-plugin.html#using-a-plugin) in VuePress.
 
+## Prior Art
+
+This project is inpired by [neo4jd3](https://github.com/eisman/neo4jd3).
+
 ## Contributing
 
 All kinds of contribution are welcome!
