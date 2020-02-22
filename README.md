@@ -4,12 +4,11 @@ A network graph for your [VuePress](https://vuepress.vuejs.org/)' documentation.
 
 <p align="left">
   <img src="https://badgen.net/npm/v/vuepress-plugin-catalog-graph" />
+  <img src="https://badgen.net/badge/VuePress/1.3.0+/purple" />
   <img src="https://badgen.net/npm/license/vuepress-plugin-catalog-graph" />
   <img src="https://badgen.net/packagephobia/install/vuepress-plugin-catalog-graph" />
   <img src="https://badgen.net/github/last-commit/ludanxer/catalog-graph/master" />
 </p>
-
-Catalog Graph is developed with `vuepress@1.3.0`. Other versions of VuePress is not tested (yet).
 
 ## Usage
 
