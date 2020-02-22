@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/ludanxer/catalog-graph/compare/v0.2.3...v0.2.4) (2020-02-22)
+
+
+### Features
+
+* hover to display node properties ([347a94e](https://github.com/ludanxer/catalog-graph/commit/347a94e63fe71ed4d15c14199387853c4171b8dc))
+
 ### [0.2.3](https://github.com/ludanxer/catalog-graph/compare/v0.2.2...v0.2.3) (2020-02-17)
 
 
