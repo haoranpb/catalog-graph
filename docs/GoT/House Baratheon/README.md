@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: Ours is the Fury
+---
+
 # House Baratheon
 
 > Ours is the Fury

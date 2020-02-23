@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: A Lannister Always Pays His Debts
+---
+
 # House Lannister
 
 > A Lannister Always Pays His Debts

@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: Winter Is Coming
+---
+
 # House Stark
 
 > Winter Is Coming

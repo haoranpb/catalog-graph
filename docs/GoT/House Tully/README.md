@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: Family, Duty, Honor
+---
+
 # House Tully
 
 > Family, Duty, Honor

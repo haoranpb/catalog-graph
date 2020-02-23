@@ -45,7 +45,8 @@ module.exports = {
           children: [
             ['', 'Introduction'],
             'getting-started',
-            'configuration'
+            'configuration',
+            'api-reference'
           ]
         }
       ]

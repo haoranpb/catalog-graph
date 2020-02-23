@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: Fire and Blood
+---
+
 # House Targaryen
 
 > Fire and Blood

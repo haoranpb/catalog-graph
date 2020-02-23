@@ -1,3 +1,8 @@
+---
+catalogGraph:
+  - word: Growing Strong
+---
+
 # House Tyrell
 
 > Growing Strong
