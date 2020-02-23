@@ -4,9 +4,7 @@ In addition to this document, you may also want to check out [How to Use Plugin]
 
 **Live Demo** :point_right: [Game of Thones](../GoT)
 
-Three steps to get things done!
-
-[[toc]]
+Only three steps to get things done :point_down:!
 
 ## Installation
 
@@ -25,6 +23,7 @@ yarn install -D vuepress-plugin-catalog-graph
 Config VuePress to enable Catalog Graph.
 
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: ['vuepress-plugin-catalog-graph']
 }
@@ -40,4 +39,6 @@ Put `<CatalogGraph />` in your document, and go check it out!
 <CatalogGraph />
 ```
 
-Need more custimization? Visit [Configuration](./configuration.html).
+## What's Next
+
+Need more custimization? Visit [Configuration](../config/).

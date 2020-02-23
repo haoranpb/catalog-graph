@@ -33,6 +33,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Guide', link:'/guide/' },
+      { text: 'Config', link:'/config/' },
+      { text: 'API', link:'/api.html' },
       { text: 'Game of Thones', link:'/GoT/' },
       { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
       { text: 'GitHub', link: 'https://github.com/ludanxer/catalog-graph' }
@@ -44,9 +46,19 @@ module.exports = {
           collapsable: false,
           children: [
             ['', 'Introduction'],
-            'getting-started',
-            'configuration',
-            'api-reference'
+            'getting-started'
+          ]
+        }
+      ],
+      '/config/': [
+        {
+          title: 'Configuration',
+          collapsable: false,
+          children: [
+            ['', 'Introduction'],
+            'option',
+            'attribute',
+            'frontmatter'
           ]
         }
       ]
