@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-catalog-graph",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "A network graph for your VuePress' documentation",
   "keywords": [
     "vuepress-plugin",
