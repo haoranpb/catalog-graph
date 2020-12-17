@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "author": "ludanxer <ludanxer@icloud.com>",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
     "/lib"
   ],
