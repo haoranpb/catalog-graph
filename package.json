@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-catalog-graph",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A network graph for your VuePress' documentation",
   "keywords": [
     "vuepress-plugin",
@@ -37,8 +37,7 @@
   },
   "lint-staged": {
     "package.json": [
-      "sort-package-json",
-      "git add"
+      "sort-package-json"
     ]
   },
   "dependencies": {
