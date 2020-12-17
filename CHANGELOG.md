@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/ludanxer/catalog-graph/compare/v0.2.5...v0.2.6) (2020-12-17)
+
+
+### Features
+
+* bump up some versions ([02da4d7](https://github.com/ludanxer/catalog-graph/commit/02da4d760961a4af75a2d3b173d22f37cc5fe601))
+
+
+### Bug Fixes
+
+* main entry in package.json ([#4](https://github.com/ludanxer/catalog-graph/issues/4)) ([8bd429d](https://github.com/ludanxer/catalog-graph/commit/8bd429dd7a3cf531975fd7f521ee4a5f7fe8621b))
+* remove "git add" after lint-staged ([92dceb9](https://github.com/ludanxer/catalog-graph/commit/92dceb9d3d58b2925f425ac6e36cffa9c7f7b1cf))
+
 ### [0.2.5](https://github.com/ludanxer/catalog-graph/compare/v0.2.4...v0.2.5) (2020-02-23)
 
 
