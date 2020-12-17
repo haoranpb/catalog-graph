@@ -46,7 +46,7 @@
     "remark-preset-lint-recommended": "^3.0.3",
     "remark-validate-links": "^9.2.0",
     "sort-package-json": "^1.40.0",
-    "standard-version": "^8.0.1",
+    "standard-version": "^9.0.0",
     "vuepress": "^1.7.1"
   },
   "remarkConfig": {
