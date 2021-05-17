@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ludanxer/catalog-graph"
+    "url": "https://github.com/haoranpb/catalog-graph"
   },
   "license": "MIT",
-  "author": "ludanxer <ludanxer@icloud.com>",
+  "author": "Haoran Sun <ludanxer@icloud.com>",
   "main": "lib/index.js",
   "files": [
     "/lib"
@@ -21,45 +21,14 @@
   "scripts": {
     "build:docs": "vuepress build docs",
     "dev": "vuepress dev docs",
-    "lint-md": "remark .",
     "release": "standard-version"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "package.json": [
-      "sort-package-json"
-    ]
   },
   "dependencies": {
     "d3": "^5.15.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "husky": "^4.2.2",
-    "lint-staged": "^10.0.7",
-    "remark-cli": "^7.0.1",
-    "remark-preset-lint-recommended": "^3.0.3",
-    "remark-validate-links": "^9.2.0",
-    "sort-package-json": "^1.40.0",
     "standard-version": "^9.0.0",
     "vuepress": "^1.7.1"
-  },
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended",
-      [
-        "remark-lint-list-item-indent",
-        false
-      ],
-      [
-        "remark-lint-list-item-bullet-indent",
-        false
-      ],
-      "validate-links"
-    ]
   }
 }

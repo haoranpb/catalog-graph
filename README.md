@@ -14,15 +14,11 @@ A network graph for your [VuePress](https://vuepress.vuejs.org/)' documentation.
 
 Check out the [documentation site](https://catalog-graph.netlify.com) and [How to Use Plugin](https://vuepress.vuejs.org/plugin/using-a-plugin.html#using-a-plugin) in VuePress.
 
-## Prior Art
-
-This project is inpired by [neo4jd3](https://github.com/eisman/neo4jd3).
-
 ## Contributing
 
 All kinds of contribution are welcome!
 
-[Create an issue](https://github.com/ludanxer/catalog-graph/issues/new) before you work on a Pull Request.
+[Create an issue](https://github.com/haoranpb/catalog-graph/issues/new) before you work on a Pull Request.
 
 ```shell
 yarn install
@@ -32,4 +28,4 @@ yarn dev
 
 ## License
 
-[MIT](https://github.com/ludanxer/catalog-graph/blob/master/LICENSE) Licensed | Copyright © 2019-present ludanxer
+[MIT](https://github.com/haoranpb/catalog-graph/blob/master/LICENSE) Licensed | Copyright © 2019-present Haoran
